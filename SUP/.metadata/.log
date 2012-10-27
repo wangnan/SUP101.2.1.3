@@ -1,0 +1,114 @@
+!SESSION 2012-10-26 18:20:28.881 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_31
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.sybase.stf.sysam 1 10004 2012-10-26 18:20:34.555
+!MESSAGE INFO: [msgId: 131228], message: Using licenses from: C:\Sybase\UnwiredPlatform\MobileSDK213\Unwired_WorkSpace\Eclipse\sybase_workspace\framework\eclipse\plugins\com.sybase.stf.sysam_2.0.0.201110181519\..\..\..\..\..\Sysam-2.0\Licenses
+
+!ENTRY com.sybase.stf.sysam 1 10004 2012-10-26 18:20:34.579
+!MESSAGE INFO: [msgId: 131252], message: Checked out license for 1 SWS_MOBL (2.0/permanent/0ADA A1F8 3A86 8354).
+
+!ENTRY org.eclipse.emf.ecore 2 0 2012-10-26 18:20:34.934
+!MESSAGE Both 'com.sybase.uep.xbw.diagram' and 'com.sybase.uep.xbw.diagram.screen' register an extension parser for 'xbw'
+
+!ENTRY com.sybase.stf.sysam 1 10004 2012-10-26 18:20:35.631
+!MESSAGE INFO: [msgId: 131252], message: Checked out license for 1 SWS_SRVS (2.0/permanent/11D8 03B5 6C02 4619).
+
+!ENTRY com.sybase.stf.sysam 1 10004 2012-10-26 18:20:38.708
+!MESSAGE INFO: [msgId: 131252], message: Checked out license for 1 SWS_DATA (2.0/permanent/1F5E 98FE 8CDF 291F).
+
+!ENTRY org.eclipse.datatools.connectivity 2 -1 2012-10-26 18:21:13.736
+!MESSAGE Error creating Unwired Server Connection connection to My Unwired Server. (Error: com.sybase.djc.SystemException: Error: Connecting to host: WIN-9SN5AA682K5.WIN-9SN5AA682K5, port: 2000.)
+!STACK 0
+com.sybase.uep.admin.client.AdminException: com.sybase.djc.SystemException: Error: Connecting to host: WIN-9SN5AA682K5.WIN-9SN5AA682K5, port: 2000.
+	at com.sybase.sup.admin.client.impl.AdminContext.initialize(AdminContext.java:94)
+	at com.sybase.sup.admin.client.impl.AdminContext.getInstance(AdminContext.java:35)
+	at com.sybase.sup.admin.client.impl.ServerConnectionImpl.<init>(ServerConnectionImpl.java:22)
+	at com.sybase.sup.admin.client.impl.ServerConnectionImpl.<init>(ServerConnectionImpl.java:29)
+	at com.sybase.uep.admin.client.ServerConnectionManager.ping(ServerConnectionManager.java:240)
+	at com.sybase.uep.admin.client.ServerConnectionManager.updateConnectionProperties(ServerConnectionManager.java:147)
+	at com.sybase.uep.admin.client.ServerConnectionManager.clusterConnect(ServerConnectionManager.java:117)
+	at com.sybase.uep.admin.client.ServerConnectionManager.clusterConnect(ServerConnectionManager.java:93)
+	at com.sybase.uep.datasources.uepprofile.UEPServerConnection.checkCompatibility(UEPServerConnection.java:88)
+	at com.sybase.uep.datasources.uepprofile.UEPServerConnection.<init>(UEPServerConnection.java:58)
+	at com.sybase.uep.datasources.uepprofile.UEPConnectionFactory.createConnection(UEPConnectionFactory.java:16)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(Unknown Source)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(Unknown Source)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(Unknown Source)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: com.sybase.djc.SystemException: Error: Connecting to host: WIN-9SN5AA682K5.WIN-9SN5AA682K5, port: 2000.
+	at com.sybase.djc.rmi.iiop.client.Connection.init(Connection.java:619)
+	at com.sybase.djc.rmi.iiop.client.Connection.getInstance(Connection.java:65)
+	at com.sybase.djc.rmi.iiop.client.ConnectionPool.iiopConnection(ConnectionPool.java:455)
+	at com.sybase.djc.rmi.iiop.client.ConnectionPool.newConnection(ConnectionPool.java:410)
+	at com.sybase.djc.rmi.iiop.client.ConnectionPool.get(ConnectionPool.java:152)
+	at com.sybase.djc.rmi.iiop.client.ConnectionPool_DJC.get(ConnectionPool_DJC.java:30)
+	at com.sybase.djc.rmi.iiop.ObjectRef.$connect(ObjectRef.java:274)
+	at com.sybase.djc.org.omg.CosNaming.iiop_stubs.NamingContext._is_a(NamingContext.java:60)
+	at com.sybase.djc.rmi.iiop.client.ClientNamingContext.init(ClientNamingContext.java:710)
+	at com.sybase.djc.rmi.iiop.client.ClientNamingContext.getInstance(ClientNamingContext.java:76)
+	at com.sybase.sup.admin.client.impl.AdminContext.initialize(AdminContext.java:87)
+	... 15 more
+Caused by: java.net.UnknownHostException: WIN-9SN5AA682K5.WIN-9SN5AA682K5
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:195)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at java.net.Socket.connect(Socket.java:478)
+	at java.net.Socket.<init>(Socket.java:375)
+	at java.net.Socket.<init>(Socket.java:189)
+	at com.sybase.djc.rmi.iiop.client.Connection.init(Connection.java:607)
+	... 25 more
+
+!ENTRY org.eclipse.datatools.connectivity 4 -1 2012-10-26 18:21:13.820
+!MESSAGE Could not connect to My Unwired Server.
+!SUBENTRY 1 org.eclipse.datatools.connectivity 2 -1 2012-10-26 18:21:13.820
+!MESSAGE Error creating Unwired Server Connection connection to My Unwired Server. (Error: com.sybase.djc.SystemException: Error: Connecting to host: WIN-9SN5AA682K5.WIN-9SN5AA682K5, port: 2000.)
+!STACK 0
+com.sybase.uep.admin.client.AdminException: com.sybase.djc.SystemException: Error: Connecting to host: WIN-9SN5AA682K5.WIN-9SN5AA682K5, port: 2000.
+	at com.sybase.sup.admin.client.impl.AdminContext.initialize(AdminContext.java:94)
+	at com.sybase.sup.admin.client.impl.AdminContext.getInstance(AdminContext.java:35)
+	at com.sybase.sup.admin.client.impl.ServerConnectionImpl.<init>(ServerConnectionImpl.java:22)
+	at com.sybase.sup.admin.client.impl.ServerConnectionImpl.<init>(ServerConnectionImpl.java:29)
+	at com.sybase.uep.admin.client.ServerConnectionManager.ping(ServerConnectionManager.java:240)
+	at com.sybase.uep.admin.client.ServerConnectionManager.updateConnectionProperties(ServerConnectionManager.java:147)
+	at com.sybase.uep.admin.client.ServerConnectionManager.clusterConnect(ServerConnectionManager.java:117)
+	at com.sybase.uep.admin.client.ServerConnectionManager.clusterConnect(ServerConnectionManager.java:93)
+	at com.sybase.uep.datasources.uepprofile.UEPServerConnection.checkCompatibility(UEPServerConnection.java:88)
+	at com.sybase.uep.datasources.uepprofile.UEPServerConnection.<init>(UEPServerConnection.java:58)
+	at com.sybase.uep.datasources.uepprofile.UEPConnectionFactory.createConnection(UEPConnectionFactory.java:16)
+	at org.eclipse.datatools.connectivity.internal.ConnectionFactoryProvider.createConnection(Unknown Source)
+	at org.eclipse.datatools.connectivity.internal.ConnectionProfile.createConnection(Unknown Source)
+	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(Unknown Source)
+	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: com.sybase.djc.SystemException: Error: Connecting to host: WIN-9SN5AA682K5.WIN-9SN5AA682K5, port: 2000.
+	at com.sybase.djc.rmi.iiop.client.Connection.init(Connection.java:619)
+	at com.sybase.djc.rmi.iiop.client.Connection.getInstance(Connection.java:65)
+	at com.sybase.djc.rmi.iiop.client.ConnectionPool.iiopConnection(ConnectionPool.java:455)
+	at com.sybase.djc.rmi.iiop.client.ConnectionPool.newConnection(ConnectionPool.java:410)
+	at com.sybase.djc.rmi.iiop.client.ConnectionPool.get(ConnectionPool.java:152)
+	at com.sybase.djc.rmi.iiop.client.ConnectionPool_DJC.get(ConnectionPool_DJC.java:30)
+	at com.sybase.djc.rmi.iiop.ObjectRef.$connect(ObjectRef.java:274)
+	at com.sybase.djc.org.omg.CosNaming.iiop_stubs.NamingContext._is_a(NamingContext.java:60)
+	at com.sybase.djc.rmi.iiop.client.ClientNamingContext.init(ClientNamingContext.java:710)
+	at com.sybase.djc.rmi.iiop.client.ClientNamingContext.getInstance(ClientNamingContext.java:76)
+	at com.sybase.sup.admin.client.impl.AdminContext.initialize(AdminContext.java:87)
+	... 15 more
+Caused by: java.net.UnknownHostException: WIN-9SN5AA682K5.WIN-9SN5AA682K5
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:195)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at java.net.Socket.connect(Socket.java:478)
+	at java.net.Socket.<init>(Socket.java:375)
+	at java.net.Socket.<init>(Socket.java:189)
+	at com.sybase.djc.rmi.iiop.client.Connection.init(Connection.java:607)
+	... 25 more
+
+!ENTRY com.sybase.stf.deploy.common 1 -1 2012-10-26 18:22:11.138
+!MESSAGE Deployment Status
+!SUBENTRY 1 com.sybase.stf.deploy.common 1 -1 2012-10-26 18:22:11.138
+!MESSAGE Successfully deployed package, .pkg to server, My Unwired Server.
